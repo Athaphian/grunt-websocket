@@ -20,7 +20,7 @@ grunt.initConfig({
 })
 ```
 
-Handler example:
+Handler example that receives a JSON object from the client and echoes it back with a delay of 2 seconds.
 
 ```js
 module.exports = function (request) {
@@ -46,7 +46,7 @@ module.exports = function (request) {
 };
 ```
 
-Client example:
+Client example that sends a JSON object to the handler on the server.
 
 ```js
 // if user is running mozilla then use it's built-in WebSocket
@@ -57,7 +57,7 @@ Client example:
   connection.onopen = function () {
     console.log('Connection ready');
 
-    connection.send(JSON.stringify({name: 'bas'}));
+    connection.send(JSON.stringify({name: 'John Doe'}));
   };
 
   connection.onerror = function (error) {
