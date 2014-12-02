@@ -1,0 +1,37 @@
+{
+  "name": "grunt-websocket",
+  "main": "./tasks/websocket.js",
+  "version": "1.0.0",
+  "description": "grunt-websocket is a basic grunt wrapper around websocket",
+  "author": {
+    "name": "Bas Biesheuvel",
+    "email": "athaphian@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Bas Biesheuvel",
+      "email": "athaphian@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:Athaphian/grunt-websocket.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Athaphian/grunt-websocket/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "websocket": "^1.0.13"
+  },
+  "peerDependencies": {
+    "grunt": ">=0.4.1",
+    "requirejs": "~2.1.11"
+  },
+  "keywords": [
+    "grunt",
+    "websocket"
+  ]
+}
