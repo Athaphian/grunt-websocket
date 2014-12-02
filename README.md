@@ -7,7 +7,7 @@ Wraps the [websocket](https://www.npmjs.org/package/websocket) implementation fo
 
 Configuration in grunt file:
 
-```javascript
+```js
 grunt.initConfig({
     websocket: {
           options: {
@@ -18,11 +18,11 @@ grunt.initConfig({
           target: {}
         }
 })
-```javascript
+```
 
 Handler example:
 
-```javascript
+```js
 module.exports = function (request) {
   var connection = request.accept(null, request.origin);
 
@@ -44,11 +44,11 @@ module.exports = function (request) {
     console.log('connection closed');
   });
 };
-```javascript
+```
 
 Client example:
 
-```javascript
+```js
 // if user is running mozilla then use it's built-in WebSocket
   window.WebSocket = window.WebSocket || window.MozWebSocket;
 
@@ -72,4 +72,4 @@ Client example:
       console.log('This doesn\'t look like a valid JSON: ', message.data);
     }
   };
-```javascript
+```
