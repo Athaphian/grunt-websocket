@@ -13,7 +13,6 @@ grunt.initConfig({
           options: {
             port: 1337,
             handler: 'websockets/websocketHandler.js'
-
           },
           target: {}
         }
