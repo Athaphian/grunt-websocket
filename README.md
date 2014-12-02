@@ -20,6 +20,18 @@ grunt.initConfig({
 })
 ```
 
+#### options.port or target.options.port
+Type: `Number`
+Default: 8888
+
+The port number on which to start the websockets server.
+
+#### options.handler or target.options.handler
+Type: `String`
+
+The relative location of a handler script. The handler script defines a simple function that takes a request object as parameter.
+The request object is the actual request object from the websockets library.
+
 Handler example that receives a JSON object from the client and echoes it back with a delay of 2 seconds.
 
 ```js
