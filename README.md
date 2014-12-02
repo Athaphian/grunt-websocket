@@ -35,6 +35,20 @@ Type: `String`
 The relative location of a handler script. The handler script defines a simple function that takes a request object as parameter.
 The request object is the actual request object from the websockets library.
 
+#### options.useConnect or target.options.useConnect
+Type: `Boolean`
+
+Specifies whether to attach to a existing connect webserver or to start a standalone http server to serve websockets. When set to true,
+the websocket task must be executed before starting connect so that websocket can start when connect emits the started event. Also
+the configured port should match the connect port, this can be used to connect specific websocket servers to specific connect instances.
+
+NOTE: Currently setting this to true does not work, I am in the progress of sending a pull request to grunt-connect to support this event...
+Make this work locally by editint grunt-contrib-connect/tasks/connect.js and after the keepalive check add this snippet:
+
+```js
+grunt.event.emit('connect-started', server, options.port);
+```
+
 ### Server example (handler)
 
 Handler example that receives a JSON object from the client and echoes it back with a delay of 2 seconds.
