@@ -35,6 +35,8 @@ Type: `String`
 The relative location of a handler script. The handler script defines a simple function that takes a request object as parameter.
 The request object is the actual request object from the websockets library.
 
+### Server example (handler)
+
 Handler example that receives a JSON object from the client and echoes it back with a delay of 2 seconds.
 
 ```js
@@ -60,6 +62,8 @@ module.exports = function (request) {
   });
 };
 ```
+
+### Client example
 
 Client example that sends a JSON object to the handler on the server.
 
