@@ -20,6 +20,9 @@ grunt.initConfig({
 })
 ```
 
+### Options
+The available configuration options.
+
 #### options.port or target.options.port
 Type: `Number`
 Default: 8888
