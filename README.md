@@ -106,4 +106,4 @@ Client example that sends a JSON object to the handler on the server.
   };
 ```
 
-edit 3
+edit 4
